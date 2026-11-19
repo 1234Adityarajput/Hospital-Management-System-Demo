@@ -20,6 +20,20 @@ Full-fledged **Hospital Management System (Electronic Medical Records - EMR)** b
 
 ## 🔑 All Login Credentials & Access Details
 
+### ⚡ Quick Credentials Table
+
+| Role / Access | Username / Email (ID) | Password / Access Key | Direct Login URL |
+|---|---|---|---|
+| 👑 **Primary Admin** | `bensontesting@gmail.com` | `programming` | [Login as Admin](https://hospital-management-system-ktrh.onrender.com/login.php?attempt=1) |
+| 👑 **Secondary Admin** | `admin@admin.com` | `admin123` | [Login as Admin](https://hospital-management-system-ktrh.onrender.com/login.php?attempt=1) |
+| 👨‍⚕️ **Doctor (Surgeon)** | `totonajoyce@gmail.com` | `12345` | [Login as Doctor](https://hospital-management-system-ktrh.onrender.com/login.php?attempt=2) |
+| 👨‍⚕️ **Doctor (Clinical Officer)** | `bensonwainaina30gmail.com` | `hospital` | [Login as Doctor](https://hospital-management-system-ktrh.onrender.com/login.php?attempt=2) |
+| 🧑‍🦽 **Patient 1** | Phone: `0725667841` | Patient No: `4066` | [Patient Portal](https://hospital-management-system-ktrh.onrender.com/login-patient.php) |
+| 🧑‍🦽 **Patient 2** | Phone: `0713345678` | Patient No: `1234` | [Patient Portal](https://hospital-management-system-ktrh.onrender.com/login-patient.php) |
+| 🗄️ **Aiven Cloud MySQL** | `avnadmin` | *(Set via `DB_PASSWORD` env var in Render)* | Port: `26284` / DB: `hospital` |
+
+---
+
 ### 👑 1. System Administrator Accounts
 
 #### Admin Account 1 (Primary)
@@ -79,7 +93,8 @@ Full-fledged **Hospital Management System (Electronic Medical Records - EMR)** b
 |---|---|
 | **Host** | `mysql-1a85412b-maheshchouhanmsk12-c513.a.aivencloud.com` |
 | **Port** | `26284` |
-| **User** | `avnadmin` |
+| **User (ID)** | `avnadmin` |
+| **Password** | *(Configured via Render `DB_PASSWORD` Env Var / Config class)* |
 | **Database** | `hospital` |
 | **SSL Encryption** | Required (`MYSQLI_CLIENT_SSL` / `require_secure_transport=ON`) |
 | **MySQL Version** | 8.4.11 |
@@ -92,7 +107,7 @@ Full-fledged **Hospital Management System (Electronic Medical Records - EMR)** b
 | `DB_SERVER` | `mysql-1a85412b-maheshchouhanmsk12-c513.a.aivencloud.com` |
 | `DB_PORT` | `26284` |
 | `DB_USERNAME` | `avnadmin` |
-| `DB_PASSWORD` | *(Your Aiven DB Password)* |
+| `DB_PASSWORD` | *(Set in Render Dashboard environment variables)* |
 | `DB_NAME` | `hospital` |
 | `DB_SSL` | `true` |
 | `PORT` | `10000` |
